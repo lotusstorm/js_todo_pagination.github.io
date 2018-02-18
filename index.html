@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+</head>
+<body>
+    <form class="container col-sm-6 p-0" id="todo">
+        <div class="row input-group m-0">
+            <input type="text" class="col-sm-10 form-control" placeholder="Item name" name="item" aria-label="Recipient's username" aria-describedby="basic-addon2" autocomplete="off" id="todo__input">
+            <div class="p-0 col-sm-2 input-group-append">
+                <button type="submit" class="col btn btn-outline-dark" type="button" id="todo__submit_add-item">+add item</button>
+            </div>
+        </div>
+        <ul class="list-group " id="todo__list"></ul>
+        <div class="form-row mt-3 justify-content-between">
+            <div class="form-row col-4 justify-content-around">
+                <button type="button" class="btn btn-outline-dark btn-sm" id="todo__btn_check-uncheck-all">check/uncheck</button>
+                <button type="button" class="btn btn-outline-dark btn-sm" id="todo__btn_del-all-checked">del-all-checked</button>
+            </div>
+            <div class="form-row col-8 justify-content-around" id="btn__list">
+                <button type="button" class="btn btn-outline-dark btn-sm" name="list" id="todo__btn_show-all">show-all</button>
+                <button type="button" class="btn btn-outline-dark btn-sm" name="list" id="todo__btn_show-only-checked">show-only-checked</button>
+                <button type="button" class="btn btn-outline-dark btn-sm" name="list" id="todo__btn_show-only-unchecked">show-only-unchecked</button>
+            </div>
+        </div>
+        <div class="row col-sm-12 row p-0 m-0">
+            <p class="col-sm-2 p-0 m-0">check: <span class="todo__check-counter" id="todo__check-counter">0</span></p>
+            <p class="col-sm-2 p-0 m-0">uncheck: <span class="todo__uncheck-counter" id="todo__uncheck-counter">0</span></p>
+        </div>
+        <div id="pagination"></div>
+    </form>
+    <script src="js/underscore-1.8.3.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
+    <!--<script src="js/main.js"></script>-->
+    <script src="js/pagination.js"></script>
+</body>
+</html>
